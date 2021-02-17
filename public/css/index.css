@@ -44,10 +44,18 @@ p {
 }
 
 .flip-card-back {
-   background-color: white;
-   color: black;
    text-size-adjust: 20px;
    transform: rotateY(180deg);
+}
+
+.flip-card-back.black {
+   background-color: black;
+   color: white;
+}
+
+.flip-card-back.white {
+   background-color: white;
+   color: black;
 }
 
 .flex-container {

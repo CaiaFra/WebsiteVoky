@@ -1,8 +1,15 @@
 const { Sequelize } = require('sequelize');
+const path = require('path');
 
-const sequelize = new Sequelize('cah-database', 'root', '', {
-   dialect: 'mysql',
-   host: 'localhost',
+const p = path.join(
+   path.dirname(require.main.filename),
+   'data',
+   'database.sqlite'
+);
+
+const sequelize = new Sequelize({
+   dialect: 'sqlite',
+   storage: p,
 });
 
 module.exports = sequelize;

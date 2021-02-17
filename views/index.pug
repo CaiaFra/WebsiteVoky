@@ -12,17 +12,17 @@ html(lang="en")
          .flex-child
             .flip-card
                .flip-card-inner
-                  .flip-card-front 
-                     img(src="https://upload.wikimedia.org/wikipedia/commons/1/19/Cards_Against_Humanity_logo.png", alt="White Card" style="width:400px;height:400px;")
-                  .flip-card-back
-                     p Random Black Card: #{blackText}
+                  div(class="flip-card-front") 
+                     img(src="/img/Black.png", alt="Black Card" style="width:400px;height:400px;")
+                  div(class="flip-card-back black")
+                     p #{blackText}
          .flex-child
             .flip-card
                .flip-card-inner
-                  .flip-card-front 
-                     img(src="http://mywastedlife.com/CAH/img/back-white.png", alt="White Card" style="width:400px;height:400px;")
-                  .flip-card-back
-                     p Random White Card: #{whiteText}
+                  div(class="flip-card-front") 
+                     img(src="/img/White.png", alt="White Card" style="width:400px;height:400px;")
+                  div(class="flip-card-back white")
+                     p #{whiteText}
 
       form(action="/", method="get") 
          //- button(type="hidden" class="btn") Generate
